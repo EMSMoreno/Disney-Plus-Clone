@@ -1,0 +1,9 @@
+Comando para abrir site no localhost8080, colocar no cmd por esta ordem:
+
+cd C:\Disney+_Clone\public
+
+seguido de:
+
+php -S localhost:8080
+
+(pasta com o projeto deve estar dentro do disco C)

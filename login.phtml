@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/style_registo.css">
+	<link rel="shortcut icon" href="/imagens/disney-plus-logo.svg" type="image/x-icon">
+	<title>Iniciar sessão</title>
+</head>
+<body>
+<div class="container">
+  <div class="d-flex justify-content-center mt-5">
+    <div class="card" style="width: 36rem;">
+      <div class="card-body">
+
+        <div class="d-flex justify-content-center">
+          <img src="/imagens/disney.PNG" />
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <h2>Inicia sessão</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+		<form method="post" action="/validar">
+			<div class="row">
+				<div class="col">
+					<input type="text" name="email" class="form-control" placeholder="E-mail">
+				</div>
+				<div class="col">
+					<input type="password" name="senha" class="form-control" placeholder="Senha">
+				</div>
+				<div class="col-auto">
+					<button type="submit" class="btn btn-primary mb-2">Entrar</button>
+				</div>
+				
+			</div>
+
+			<?php if($this->view->login == 'erro') { ?>
+				<div class="row">
+					<div class="col">
+						<span class="text text-danger">*E-mail ou password inválido(s)</span>
+					</div>
+				</div>
+				
+			<?php } ?>
+			<br>
+			<h5>Não tens conta? Inscreve-te já e vê as séries e os filmes que mais desejas</h5> <br>
+			<a href="/inscreverse" class="btn btn-primary btn-block mb-2">Inscrever-se</a>
+		</form>
+
+	
+
+
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
+
